@@ -1,0 +1,53 @@
+site_name: My MkDocs Blog
+site_url: https://YOUR_STATIC_WEB_APP.azurestaticapps.net
+site_author: Your Name
+site_description: "Azure Static Web Apps로 배포하는 MkDocs 블로그"
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드
+  features:
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - 홈: index.md
+  - 소개: about.md
+  - 블로그:
+      - 글 1: blog/post1.md
+      - 글 2: blog/post2.md
+
+plugins:
+  - search
+  - mkdocs_git_revision_date_localized
+  - mkdocs_git_authors
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed
