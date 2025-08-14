@@ -37,7 +37,6 @@ nav:
 plugins:
   - search
   - git-revision-date-localized
-  - mkdocs_git_authors
 
 markdown_extensions:
   - toc:
